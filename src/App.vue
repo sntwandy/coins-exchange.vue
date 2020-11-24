@@ -1,28 +1,17 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" text="It's work" />
-  </div>
+  <main>
+    <px-header />
+    <px-assets-table />
+  </main>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// Components
+import PxHeader from '@/components/PxHeader'
+import PxAssetsTable from '@/components/PxAssetsTable'
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld
-  }
-};
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  name: 'App',
+  components: { PxHeader, PxAssetsTable }
 }
-</style>
+</script>
